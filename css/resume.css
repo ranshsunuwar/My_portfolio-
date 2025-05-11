@@ -1,0 +1,32 @@
+.resume {
+    padding: 3rem 2rem;
+    background: #fff;
+    min-height: 60vh;
+    text-align: center;
+}
+
+.resume h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: #1A2526;
+}
+
+.resume p {
+    font-size: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .resume {
+        padding: 2rem 1rem;
+    }
+
+    .resume h2 {
+        font-size: 1.5rem;
+    }
+
+    .resume p {
+        font-size: 0.9rem;
+    }
+}

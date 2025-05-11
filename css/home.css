@@ -1,0 +1,78 @@
+.hero {
+    text-align: left;
+    padding: 5rem 2rem;
+    background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97') no-repeat center;
+    background-size: cover;
+    color: #fff;
+    min-height: 60vh;
+}
+
+.hero .typing-text {
+    display: inline-block;
+    font-size: 2.5rem;
+    white-space: nowrap;
+    position: relative;
+}
+
+.hero .typing-text span {
+    display: inline-block;
+    overflow: hidden;
+    width: 0;
+    position: relative;
+    animation: typing 7s linear infinite;
+}
+
+.hero .typing-text span::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: #fff;
+}
+
+@keyframes typing {
+    0% { width: 0; }
+    80% { width: 100%; }
+    100% { width: 100%; }
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero .hire-btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background: #1A2526;
+    color: #fff;
+    border-radius: 25px;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.hero .hire-btn:hover {
+    background: #00C4B4;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 3rem 1rem;
+    }
+
+    .hero .typing-text {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .hero .hire-btn {
+        padding: 0.6rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}

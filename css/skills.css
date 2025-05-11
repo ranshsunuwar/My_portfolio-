@@ -1,0 +1,108 @@
+.skills {
+    background: #1A2526;
+    color: #fff;
+    padding: 2rem;
+    min-height: 60vh;
+    text-align: center;
+}
+
+.skills h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: #fff;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.skills .skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #333;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    transition: background 0.3s;
+}
+
+.skill-item:hover {
+    background: #00C4B4;
+}
+
+.skill-item i {
+    font-size: 1rem;
+}
+
+#admin-controls button {
+    padding: 0.5rem 1rem;
+    background: #00C4B4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+#admin-controls button:hover {
+    background: #1A2526;
+}
+
+#add-skill-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#add-skill-form input {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#add-skill-form button {
+    padding: 0.5rem;
+    background: #1A2526;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#add-skill-form button:hover {
+    background: #00C4B4;
+}
+
+@media (max-width: 768px) {
+    .skills {
+        padding: 1.5rem 1rem;
+    }
+
+    .skills h2 {
+        font-size: 1.5rem;
+    }
+
+    .skill-item {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    #admin-controls button {
+        font-size: 0.8rem;
+    }
+
+    #add-skill-form input,
+    #add-skill-form button {
+        font-size: 0.8rem;
+    }
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills - Ransh Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/skills.css">
+</head>
+<body>
+    <nav>
+        <div class="brand">Ransh</div>
+        <div class="hamburger"><i class="fas fa-bars"></i></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="skills.html" class="active">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/aadarsha.karki.100236" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/ransh_sunuwar/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/ranshsunuwar?tab=following" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/ransh-sunuwar-852386315" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="skills">
+            <h2><i class="fas fa-laptop-code"></i> Skills:</h2>
+            <div id="admin-controls" style="display: none; margin-bottom: 1rem;">
+                <button onclick="toggleSkillForm()">Add New Skill</button>
+                <form id="add-skill-form" style="display: none; margin-top: 1rem; max-width: 400px; margin-left: auto; margin-right: auto;">
+                    <input type="text" id="skill-name" placeholder="Skill Name (e.g., TypeScript)" required>
+                    <input type="text" id="skill-icon" placeholder="Font Awesome Icon (e.g., fa-brands fa-js)" required>
+                    <button type="submit" onclick="addNewSkill(event)">Submit</button>
+                </form>
+            </div>
+            <div class="skill-list">
+                <div class="skill-item"><i class="fas fa-code"></i> C</div>
+                <div class="skill-item"><i class="fas fa-code"></i> C++</div>
+                <div class="skill-item"><i class="fas fa-code"></i> C#</div>
+                <div class="skill-item"><i class="fab fa-html5"></i> HTML5</div>
+                <div class="skill-item"><i class="fab fa-css3-alt"></i> CSS3</div>
+                <div class="skill-item"><i class="fab fa-java"></i> Java</div>
+                <div class="skill-item"><i class="fab fa-js"></i> JavaScript</div>
+                <div class="skill-item"><i class="fas fa-database"></i> MySQL</div>
+                <div class="skill-item"><i class="fab fa-node-js"></i> Node.js</div>
+                <div class="skill-item"><i class="fab fa-php"></i> PHP</div>
+                <div class="skill-item"><i class="fab fa-python"></i> Python</div>
+                <div class="skill-item"><i class="fas fa-wind"></i> Tailwind CSS</div>
+                <div class="skill-item"><i class="fab fa-bootstrap"></i> Bootstrap</div>
+                <div class="skill-item"><i class="fab fa-react"></i> React</div>
+                <div class="skill-item"><i class="fab fa-figma"></i> Figma</div>
+                <div class="skill-item"><i class="fas fa-paint-brush"></i> Canva</div>
+                <div class="skill-item"><i class="fab fa-git-alt"></i> Git</div>
+                <div class="skill-item"><i class="fab fa-github"></i> GitHub</div>
+                <div class="skill-item"><i class="fab fa-wordpress"></i> WordPress</div>
+                <div class="skill-item"><i class="fab fa-js"></i> TypeScript</div>
+            </div>
+            <div id="admin-skills" class="skill-list"></div>
+        </section>
+    </main>
+
+    <div id="chatbot">💬</div>
+    <div id="chatbox">
+        <button id="chatbox-close">X</button>
+        <div class="chat-message bot">Hello! How can I assist you today? Choose a question below or type your own!</div>
+        <div class="chat-questions" id="chat-questions"></div>
+        <input class="chat-input" type="text" placeholder="Ask me anything..." id="chat-input">
+        <button class="chat-btn" onclick="sendChatMessage()">Send</button>
+    </div>
+
+    <footer>
+        <p>© 2025 Ransh. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

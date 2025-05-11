@@ -1,0 +1,265 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background: #fff;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Navbar */
+nav {
+    background: #f1f1f1;
+    color: #333;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav .brand {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+nav .hamburger {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+nav ul.nav-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav ul.nav-links li a {
+    color: #333;
+    font-size: 1rem;
+    padding-bottom: 0.2rem;
+    transition: color 0.3s;
+}
+
+nav ul.nav-links li a:hover {
+    color: #00C4B4;
+}
+
+nav ul.nav-links li a.active {
+    border-bottom: 2px solid #00C4B4;
+}
+
+nav .social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+nav .social-icons a {
+    color: #333;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+nav .social-icons a:hover {
+    color: #00C4B4;
+}
+
+/* Chatbot */
+#chatbot {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    background-color: #667475;
+    padding: 0.6rem 0.9rem;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    font-size: 1.2rem;
+    z-index: 999;
+}
+
+#chatbox {
+    display: none;
+    position: fixed;
+    bottom: 4.5rem;
+    right: 1.5rem;
+    width: 90%;
+    max-width: 300px;
+    height: 400px;
+    background-color: #fff;
+    border: 2px solid #1A2526;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    padding: 10px;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+#chatbox-close {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #ff4d4d;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+#chatbox-close:hover {
+    background: #cc0000;
+}
+
+.chat-message {
+    padding: 8px;
+    margin: 5px 0;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+.chat-message.bot {
+    background-color: #e3f2fd;
+}
+
+.chat-message.user {
+    background-color: #1A2526;
+    color: white;
+    text-align: right;
+}
+
+.chat-input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+.chat-btn {
+    padding: 8px;
+    background-color: #1A2526;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+.chat-btn:hover {
+    background-color: #00C4B4;
+}
+
+.chat-questions {
+    margin: 10px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+}
+
+.chat-question-btn {
+    background-color: #f1f1f1;
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.chat-question-btn:hover {
+    background-color: #00C4B4;
+    color: #fff;
+}
+
+.span-full {
+    grid-column: 1 / -1;
+}
+
+/* Footer */
+footer {
+    background-color: #030303;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+        padding: 1rem;
+    }
+
+    nav .hamburger {
+        display: block;
+    }
+
+    nav ul.nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    nav ul.nav-links.active {
+        display: flex;
+    }
+
+    nav ul.nav-links li {
+        margin: 0.5rem 0;
+    }
+
+    nav .social-icons {
+        margin-top: 1rem;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #chatbot {
+        bottom: 1rem;
+        right: 1rem;
+    }
+
+    #chatbox {
+        bottom: 3.5rem;
+        right: 1rem;
+        width: 90%;
+        max-height: 50vh;
+    }
+
+    footer {
+        padding: 1rem;
+    }
+}
