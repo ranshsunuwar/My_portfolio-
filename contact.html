@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="css/contact.css">
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script>
-        // Initialize EmailJS with your Public Key
         emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your EmailJS Public Key
     </script>
 </head>
@@ -35,19 +34,31 @@
 
     <main>
         <section class="contact">
-            <h2>Contact Me</h2>
-            <div class="social-icons">
-                <a href="https://www.facebook.com/aadarsha.karki.100236" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/ransh_sunuwar/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="https://github.com/ranshsunuwar?tab=following" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/ransh-sunuwar-852386315" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <h1>CONTACT ME</h1>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Message Me!</h2>
+                    <p>For the further details you can contact me from here by direct mailing 
+                        me or you can personally message me in instagram.</p>
+                    <div class="contact-details">
+                        <p><strong>Address</strong></p>
+                        <p>Itahari</p>
+                        <p>Sunsari,Nepal</p>
+                        <p><strong>Phone</strong></p>
+                        <p>+977 9811029173</p>
+                        <p><strong>Email</strong></p>
+                        <p>ranshsunar@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contact-form" onsubmit="sendContactMessage(event)">
+                        <input type="text" name="name" placeholder="Enter your name" required>
+                        <input type="email" name="email" placeholder="Enter your email" required>
+                        <textarea name="message" rows="4" placeholder="Enter your message" required></textarea>
+                        <button type="submit">Send Now</button>
+                    </form>
+                </div>
             </div>
-            <form class="contact-form" id="contact-form" onsubmit="sendContactMessage(event)">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
         </section>
     </main>
 
@@ -61,7 +72,8 @@
     </div>
 
     <footer>
-        <p>© 2025 Ransh. All Rights Reserved.</p>
+        <p>© Copyright <b>Ransh.</b> All Rights Reserved</p>
+          <p>  Designed by  <b>Ransh sunuwar </b></p>
     </footer>
 
     <script src="js/script.js"></script>

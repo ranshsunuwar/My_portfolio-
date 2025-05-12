@@ -31,14 +31,6 @@
     <main>
         <section class="skills">
             <h2><i class="fas fa-laptop-code"></i> Skills:</h2>
-            <div id="admin-controls" style="display: none; margin-bottom: 1rem;">
-                <button onclick="toggleSkillForm()">Add New Skill</button>
-                <form id="add-skill-form" style="display: none; margin-top: 1rem; max-width: 400px; margin-left: auto; margin-right: auto;">
-                    <input type="text" id="skill-name" placeholder="Skill Name (e.g., TypeScript)" required>
-                    <input type="text" id="skill-icon" placeholder="Font Awesome Icon (e.g., fa-brands fa-js)" required>
-                    <button type="submit" onclick="addNewSkill(event)">Submit</button>
-                </form>
-            </div>
             <div class="skill-list">
                 <div class="skill-item"><i class="fas fa-code"></i> C</div>
                 <div class="skill-item"><i class="fas fa-code"></i> C++</div>
@@ -60,8 +52,8 @@
                 <div class="skill-item"><i class="fab fa-github"></i> GitHub</div>
                 <div class="skill-item"><i class="fab fa-wordpress"></i> WordPress</div>
                 <div class="skill-item"><i class="fab fa-js"></i> TypeScript</div>
+                <div class="skill-item"><i class="fab fa-vuejs"></i> Vue.js</div>
             </div>
-            <div id="admin-skills" class="skill-list"></div>
         </section>
     </main>
 
@@ -75,7 +67,8 @@
     </div>
 
     <footer>
-        <p>© 2025 Ransh. All Rights Reserved.</p>
+        <p>© Copyright <b>Ransh.</b> All Rights Reserved</p>
+          <p>  Designed by  <b>Ransh sunuwar </b></p>
     </footer>
 
     <script src="js/script.js"></script>

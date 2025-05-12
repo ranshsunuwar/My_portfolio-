@@ -31,15 +31,6 @@
     <main>
         <section class="projects">
             <h2>My Projects</h2>
-            <div id="admin-controls" style="display: none; margin-bottom: 1rem;">
-                <button onclick="toggleProjectForm()">Add New Project</button>
-                <form id="add-project-form" style="display: none; margin-top: 1rem; max-width: 400px; margin-left: auto; margin-right: auto;">
-                    <input type="text" id="project-title" placeholder="Project Title" required>
-                    <input type="text" id="project-icon" placeholder="Font Awesome Icon (e.g., fas fa-tasks)" required>
-                    <textarea id="project-desc" placeholder="Project Description" required></textarea>
-                    <button type="submit" onclick="addNewProject(event)">Submit</button>
-                </form>
-            </div>
             <div class="project-grid">
                 <div class="project-card">
                     <div class="icon"><i class="fas fa-globe"></i></div>
@@ -61,8 +52,12 @@
                     <h3>Task Management App</h3>
                     <p>A web app to organize tasks with deadlines and priorities.</p>
                 </div>
+                <div class="project-card">
+                    <div class="icon"><i class="fas fa-blog"></i></div>
+                    <h3>Blog Platform</h3>
+                    <p>A simple blog with user authentication and post management.</p>
+                </div>
             </div>
-            <div id="admin-projects" class="project-grid"></div>
         </section>
     </main>
 
@@ -76,7 +71,8 @@
     </div>
 
     <footer>
-        <p>© 2025 Ransh. All Rights Reserved.</p>
+     <p>© Copyright <b>Ransh.</b> All Rights Reserved</p>
+          <p>  Designed by  <b>Ransh sunuwar </b></p>
     </footer>
 
     <script src="js/script.js"></script>

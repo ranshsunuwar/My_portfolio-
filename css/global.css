@@ -202,8 +202,8 @@ nav .social-icons a:hover {
 
 /* Footer */
 footer {
-    background-color: #030303;
-    color: white;
+    background-color: #f1f1f1;
+    color: rgb(0, 0, 0);
     text-align: center;
     padding: 1.5rem;
     position: relative;
