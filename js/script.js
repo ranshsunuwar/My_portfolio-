@@ -21,7 +21,7 @@ const chatbotResponses = {
     "what are your goals for the future": "My future goal is to become a software engineer, specializing in Artificial Intelligence and Machine Learning. I also plan to pursue a Master's in IT after completing my BCA.",
     "how can i contact you": "You can contact me through the contact form on my website, or you can send me a message directly. I will respond to your inquiry as soon as possible.",
     "what are your hobbies": "In my free time, I love working on coding projects, learning new technologies, and solving programming challenges. I also enjoy playing games and watching tech-related content.",
-    "where do you study": "I study at [University Name], pursuing a Bachelor of Computer Applications (BCA).",
+    "where do you study": "I study at Itahari Namuna collage , pursuing a Bachelor of Computer Applications (BCA) in TU.",
     "do you have any certifications": "Yes, I have completed online courses and certifications in web development, programming languages, and machine learning. I am always looking for opportunities to improve my skills.",
     "how can i collaborate with you on a project": "You can reach out to me via the contact form on my website, or you can message me directly through this chat. I'd love to discuss any project collaboration opportunities."
 };
